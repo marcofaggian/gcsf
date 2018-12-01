@@ -9,5 +9,3 @@ RUN cargo install gcsf
 VOLUME [ "/drive" ]
 
 EXPOSE 8081
-
-ENTRYPOINT ["$HOME/.cargo/bin/gcsf"]

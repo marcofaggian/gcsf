@@ -10,4 +10,4 @@ VOLUME [ "/drive" ]
 
 EXPOSE 8081
 
-ENTRYPOINT ["$HOME/.cargo/bin"]
+ENTRYPOINT ["$HOME/.cargo/bin/gcsf"]

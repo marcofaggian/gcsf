@@ -8,6 +8,4 @@ RUN cargo install gcsf
 
 VOLUME [ "/drive" ]
 
-EXPOSE 8081
-
 CMD [ "/root/.cargo/bin/gcsf","login","gdrive"]

@@ -9,7 +9,7 @@ LABEL maintainer="aptalca"
 
 RUN \
  echo "**** install packages ****" && \
- apk add --no-cache -y \
+ apk add --no-cache \
 	curl \
 	findutils \
  	fuse-dev \
@@ -25,8 +25,8 @@ RUN \
 	transmission-daemon \
 	unrar \
 	unzip && \
- curl https://sh.rustup.rs -sSf | sh && \
- cargo install gcsf && \
+ curl https://sh.rustup.rs -sSf | sh -y && \
+ cargo install -y gcsf && \
  echo "**** install third party themes ****" && \
  curl -o \
 	/tmp/combustion.zip -L \

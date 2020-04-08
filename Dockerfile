@@ -25,7 +25,7 @@ RUN \
 	transmission-daemon \
 	unrar \
 	unzip && \
- curl https://sh.rustup.rs -sSf | sh && \
+ curl https://sh.rustup.rs -sSf | sh -s -- -y && \
  cargo install -y gcsf && \
  echo "**** install third party themes ****" && \
  curl -o \

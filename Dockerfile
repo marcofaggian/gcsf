@@ -12,10 +12,10 @@ RUN \
  apk add --no-cache \
 	curl \
 	findutils \
-  fuse-dev \
-  file \
-  libressl-dev \
-  pkg \
+ 	fuse-dev \
+ 	file \
+ 	libressl-dev \
+ 	pkg \
 	jq \
 	openssl \
 	p7zip \
@@ -26,6 +26,8 @@ RUN \
 	transmission-daemon \
 	unrar \
 	unzip && \
+ curl https://sh.rustup.rs -sSf | sh && \
+ cargo install gcsf && \
  echo "**** install third party themes ****" && \
  curl -o \
 	/tmp/combustion.zip -L \
@@ -52,9 +54,7 @@ RUN \
 	/kettu --strip-components=1 && \
  echo "**** cleanup ****" && \
  rm -rf \
-	/tmp/* &&
- curl https://sh.rustup.rs -sSf | sh && \
-  cargo install gcsf 
+	/tmp/*
 
 # copy local files
 COPY root/ /

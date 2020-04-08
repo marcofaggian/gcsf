@@ -9,7 +9,7 @@ LABEL maintainer="aptalca"
 
 RUN \
  echo "**** install packages ****" && \
- apk add --no-cache \
+ apk add --no-cache -y \
 	curl \
 	findutils \
  	fuse-dev \

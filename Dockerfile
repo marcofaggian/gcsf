@@ -1,6 +1,5 @@
-MAINTAINER Marco Faggian <m@marcofaggian.com>
-
 FROM lsiobase/alpine:3.11
+MAINTAINER Marco Faggian <m@marcofaggian.com>
 
 # set version label
 ARG BUILD_DATE

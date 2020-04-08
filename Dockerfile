@@ -15,7 +15,6 @@ RUN \
  	fuse-dev \
  	file \
  	libressl-dev \
- 	pkg \
 	jq \
 	openssl \
 	p7zip \

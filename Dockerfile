@@ -27,7 +27,7 @@ RUN \
 	unzip && \
  curl https://sh.rustup.rs -sSf | sh -s -- -y && \
  export PATH="$HOME/.cargo/bin:$PATH" && \
- cargo install -y gcsf && \
+ cargo install gcsf && \
  echo "**** install third party themes ****" && \
  curl -o \
 	/tmp/combustion.zip -L \

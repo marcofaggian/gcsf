@@ -11,6 +11,7 @@ RUN \
  echo "**** install packages ****" && \
  apk add --no-cache \
 	curl \
+	g++ \
 	findutils \
  	fuse-dev \
  	file \
